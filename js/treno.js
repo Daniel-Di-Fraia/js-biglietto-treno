@@ -14,8 +14,23 @@ const km = parseInt(prompt("inserisci quanti Km devi fare"))
 console.log("età utente:", eta);
 console.log("Km da percorrere:", km);
 
-//condizioni per stabilire prezzo biglietto
-const priceKm = 0.21;
+// PREZZI BIGLIETTO
+let tripPrice = (0.21 * km);
+
+//condizioni per stabilire prezzo biglietto bambini e over65
+if (eta < 18) {
+     tripPrice = tripPrice - ((tripPrice * 20 / 100));
+} else if (eta >= 65) { 
+     tripPrice = tripPrice - ((tripPrice * 40 / 100));
+}
+
+
+
+
+
+
+
+
 
 
 
