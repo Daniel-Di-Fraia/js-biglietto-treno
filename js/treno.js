@@ -20,7 +20,7 @@ let tripPrice = (0.21 * km);
 //condizioni per stabilire prezzo biglietto bambini e over65
 if (eta < 18) {
      tripPrice = tripPrice - ((tripPrice * 20 / 100));
-} else if (eta >= 65) { 
+} else if (eta > 65) { 
      tripPrice = tripPrice - ((tripPrice * 40 / 100));
 }
 
