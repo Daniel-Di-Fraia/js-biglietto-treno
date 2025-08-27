@@ -24,7 +24,8 @@ if (eta < 18) {
      tripPrice = tripPrice - ((tripPrice * 40 / 100));
 }
 
-
+// PREZZO FINALE
+console.log(tripPrice.toFixed(2));
 
 
 
