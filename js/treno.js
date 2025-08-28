@@ -11,8 +11,8 @@ Questo richiederà un minimo di ricerca. */
 // chiedo all user di inserire la sua età e quanti KM deve fare
 const eta = parseInt(prompt("inserisci la tua età"));
 const km = parseInt(prompt("inserisci quanti Km devi fare"))
-console.log("età utente:", eta);
-console.log("Km da percorrere:", km);
+console.log("età utente:", eta , "anni");
+console.log("Km da percorrere:", km , "Km");
 
 // PREZZI BIGLIETTO
 let tripPrice = (0.21 * km);
@@ -20,12 +20,14 @@ let tripPrice = (0.21 * km);
 //condizioni per stabilire prezzo biglietto bambini e over65
 if (eta < 18) {
      tripPrice = tripPrice - ((tripPrice * 20 / 100));
+     console.log("sconto applicato: bambini, 20%");
 } else if (eta > 65) { 
      tripPrice = tripPrice - ((tripPrice * 40 / 100));
+     console.log("sconto applicato: Over65, 40%");
 }
 
 // PREZZO FINALE
-console.log(tripPrice.toFixed(2));
+console.log("prezzo finale:" , tripPrice.toFixed(2) , "€");
 
 
 
